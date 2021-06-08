@@ -1,0 +1,40 @@
+.containerFour {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  &__description {
+    width: 100%;
+    height: 250px;
+    background: rgb(62, 204, 181);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__title {
+    padding-top: 40px;
+    font-size: 35px;
+    font-family: "Playfair Display", serif;
+  }
+  &__text {
+    font-size: 10px;
+    font-family: "Montserrat", sans-serif;
+  }
+  &__content {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .containerFour {
+    &__content {
+      display: grid;
+      grid-template-columns: 100%;
+    }
+  }
+}

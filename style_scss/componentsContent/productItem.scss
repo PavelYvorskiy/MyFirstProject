@@ -1,0 +1,107 @@
+.containerItem {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &_One {
+    background-image: url(../../assets/img/imagesFons_2.webp);
+  }
+  &_Two {
+    background-image: url(../../assets/img/imagesFons_3.webp);
+  }
+  &_Three {
+    background-image: url(../../assets/img/imagesFons_4.webp);
+  }
+  &_Four {
+    background-image: url(../../assets/img/imagesFons_1.webp);
+  }
+}
+
+.itemContent {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 500px;
+  min-height: 550px;
+  background: #fff;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+.contentPages {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 80%;
+  height: 90%;
+  font-family: "Playfair Display", serif;
+  &__backBtn {
+    color: rgb(91, 209, 215);
+    background: transparent;
+    font-size: 12px;
+    font-weight: 100;
+    padding: 10px;
+    letter-spacing: 1px;
+    margin: 40px 0 10px 0;
+    cursor: pointer;
+  }
+  &__title {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 5px;
+  }
+  &__subtitle {
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: 200;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+  }
+  &__text {
+    line-height: 1.6rem;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+  }
+  &__btn {
+    background: rgb(62, 204, 181);
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    transition: all 3s;
+    cursor: pointer;
+    &:hover {
+      transition: 1s;
+      background: rgb(46, 145, 128);
+    }
+  }
+}
+.containerIcon {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 575px) {
+  .containerItem {
+    min-height: 120vh;
+  }
+  .itemContent {
+    position: relative;
+    width: 375px;
+  }
+}

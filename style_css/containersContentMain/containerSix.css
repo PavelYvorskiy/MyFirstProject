@@ -1,0 +1,59 @@
+.containerSix {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: -10;
+}
+.containerSix::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -99;
+  transform: translateZ(-1px) scale(2);
+  transform-origin: center;
+  min-height: 80%;
+  min-width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../../assets/img/images_3.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contentSix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 14%;
+}
+.contentSix__title {
+  font-size: 45px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+.contentSix__text {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 575px) {
+  .containerSix {
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=containerSix.css.map */

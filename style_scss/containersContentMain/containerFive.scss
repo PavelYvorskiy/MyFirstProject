@@ -1,0 +1,49 @@
+.containerFive {
+  width: 100vw;
+  height: 90vh;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.contentFive {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  &__title {
+    margin-top: 120px;
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 800;
+  }
+  &__text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+  }
+  &__block {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 33.333% 33.333% 33.333%;
+  }
+}
+@media screen and(max-width: 1192px) {
+  .contentFive {
+    &__block {
+      grid-template-columns: 50% 50%;
+    }
+  }
+}
+@media screen and(max-width: 575px) {
+  .contentFive {
+    &__block {
+      margin-bottom: 100px;
+      grid-template-columns: 100%;
+    }
+  }
+}

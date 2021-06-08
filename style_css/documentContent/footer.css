@@ -1,0 +1,38 @@
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+}
+
+.contentFooter {
+  padding-top: 30px;
+  color: #fff;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+.contentFooter__text {
+  font-family: "Playfair Display", serif;
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.contentFooter__links {
+  min-width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.contentFooter__img {
+  width: 35px;
+  height: 35px;
+}
+
+@media screen and (max-width: 376px) {
+  .contentFooter__text {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

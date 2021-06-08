@@ -1,0 +1,100 @@
+.containerCard {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  &_One {
+    background-image: url(../../assets/img/images_mv1.webp);
+  }
+  &_Two {
+    background-image: url(../../assets/img/images_mv2.webp);
+  }
+  &_Three {
+    background-image: url(../../assets/img/images_mv3.webp);
+  }
+  &_Four {
+    background-image: url(../../assets/img/images_mv4.webp);
+  }
+}
+.contentCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  &:hover {
+    background: rgba(17, 17, 17, 0.568);
+    color: #fff;
+    .btn {
+      opacity: 1;
+    }
+    .sumLike {
+      color: #fff;
+    }
+    .repost {
+      opacity: 1;
+    }
+  }
+  &__title {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  &__user {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  &__like {
+    display: flex;
+  }
+}
+.btn {
+  width: 20px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  background-image: url(../../assets/icon/heart_1.png);
+  background-size: cover;
+  cursor: pointer;
+  z-index: 15;
+  opacity: 0;
+  &.active {
+    background-image: url(../../assets/icon/heart.png);
+  }
+}
+.startMenu {
+  height: 80%;
+  width: 100%;
+  background-color: transparent;
+  z-index: 99;
+  cursor: pointer;
+}
+.sumLike {
+  min-width: 20px;
+  height: 20px;
+  padding-left: 5px;
+  background: transparent;
+}
+.repost {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../assets/icon/repost.png);
+  background-size: cover;
+  opacity: 0;
+}

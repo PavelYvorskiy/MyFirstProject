@@ -1,0 +1,68 @@
+.containerContact {
+  position: relative;
+  width: 100vw;
+  height: 500px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-family: "Playfair Display", serif;
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__label {
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+  }
+  &__input {
+    width: 90%;
+    padding: 10px;
+    background: rgba(17, 17, 17, 0.281);
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &::placeholder {
+      color: #fff;
+      padding-left: 20px;
+      font-weight: normal;
+    }
+    &:hover {
+      background: rgb(62, 204, 181);
+    }
+    &.active {
+      background: rgb(62, 204, 181);
+    }
+  }
+  &__submit {
+    width: 97%;
+    padding: 10px;
+    color: #fff;
+    background: rgb(62, 204, 181);
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: all 2s;
+    &:hover {
+      transition: 1s;
+      background: rgb(46, 145, 128);
+    }
+  }
+}

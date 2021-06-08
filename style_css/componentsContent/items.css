@@ -1,0 +1,48 @@
+.itemsBlock {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.itemIcon {
+  min-width: 40px;
+  min-height: 40px;
+  background-size: cover;
+  background-position: center;
+}
+.itemIcon__One {
+  background-image: url(../../assets/icon/clock_80424.png);
+}
+.itemIcon__Two {
+  background-image: url(../../assets/icon/imac_icon-icons.com_66644.png);
+}
+.itemIcon__Three {
+  background-image: url(../../assets/icon/group_icon.png);
+}
+.itemIcon__Four {
+  background-image: url(../../assets/icon/wifisignal_102713.png);
+}
+.itemIcon__Five {
+  background-image: url(../../assets/icon/phone-handset_icon-icons.com_48252.png);
+}
+.itemIcon__Six {
+  background-image: url(../../assets/icon/cocktail_mojito_icon-icons.com_49878.png);
+}
+.itemIcon__Seven {
+  background-image: url(../../assets/icon/idea_lightbulb.png);
+}
+
+.itemText {
+  line-height: 1.6rem;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  padding-left: 10px;
+  padding-right: 20px;
+  text-align: left;
+}
+
+/*# sourceMappingURL=items.css.map */
